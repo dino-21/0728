@@ -1,0 +1,174 @@
+
+
+
+
+#sub {
+    width: 1100px;
+    height: 7070px;
+    margin: 0 auto;
+   
+    padding: 30px; position:relative; 
+}
+
+#product {width:450px; height:450px; position:absolute; top:40px; left:70px; }
+#product h3 {margin:10px 0 15px 0; }
+#product p {margin:0 0 5px 0; font-size:13px; font-weight: 200;}
+#product img {width:440px; height:510px;}
+
+
+
+table {  float:right; margin:20px;}
+
+#contents {
+    width: 100%;
+    height: 600px;
+     margin :0 auto; 
+}
+
+
+
+
+
+
+
+
+
+table {
+    width: 410px;
+    margin: 93px 40px 0 0;
+}
+
+td {
+    padding: 10px 15px; font-size:13px; 
+}
+
+td:first-child {
+    width: 100px; 
+}
+
+.b1 {width:500px; border-bottom:1px solid #8c8a8a; margin:10px;}
+.fon {font-size:25px; font-weight: bold; color:tomato;}
+.fon p {font-size:15px; font-weight: bold; display:inline;}
+
+
+button {
+    margin: 3px;
+    cursor: pointer; float:left; font-size:13px;
+}
+
+button:first-child {
+    background-color: #060219;
+    border-radius: 3px;
+    padding: 15px 56px;
+    color: #fff;
+    border: 1px solid #8c8a8a;
+}
+
+button:nth-child(2) {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 15px 58.5px;
+    color: black;
+    border: 1px solid #8c8a8a;
+}
+
+button:nth-child(3) {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 15px 10px;
+    color: black;
+    border: 1px solid #8c8a8a;
+}
+
+
+
+
+
+
+
+/*form*/
+
+select {
+    width: 70px;
+    height: 20px;
+    float: left;
+    margin: 5px 0 0 0px;
+    font-family: "NotoSansKR";
+    font-size: 13px;
+    color: #666;
+    border: 1px solid #8c8a8a;
+    padding: 0px 0 0 10px;
+}
+
+table h4 {font-size:20px; margin:10px 0 10px 0; color:black;}
+table p {font-size:12px; margin:0 0 10px 0; color:black;}
+table td {font-size:12px; }
+
+.table2 {width:450px; padding:5px; border-top:1px solid #8c8a8a; border-bottom:1px solid #8c8a8a; float:left; margin:8px 0 ;}
+.table2 td{text-align:center; font-size:13px; width:130px; font-weight: bold; color:black;}
+.table2 select {width:50px; float:left; margin:0 5px 0 0;}
+
+
+.tableaa { margin:0; float:right; }
+.tableaa h4 {font-size:15px; width:200px; height:30px;  float:left; margin:0px 0 0 10px;}
+.tableaa p {font-size:18px; width:80px; height:30px;  float:right;}
+.tableaa span {font-size:14px; width:20px;}
+
+
+.subme {width:1100px; height:55px; margin:150px 0 100px 0; border-bottom: 2px solid #b5b4b4;}
+.subme ul {display: flex; flex-flow:row wrap; justify-content: space-around; align-items:center; font-size:18px; font-weight: bold;  font-family: "NotoSansKR" }
+.subme li:first-child {  padding:10px 0; background-color:black;}
+.subme li { margin:10px 20px 0 10px; color:#666;}
+.subme ul li a{color:#fff; text-decoration: none; margin:25px; font-weight: 200; }
+
+
+.subbox1 {width:1100px; margin:0 auto; }
+.subbox1> h3 {text-align: center; font-size:23px; font-weight:bold; color:#272727;  height:80px; margin:30px; display: flex; align-items: center; justify-content: center; }
+.subbox1> h1 {text-align: center; font-size:46px; color:#171717; margin:50px 0 80px 0;}
+.subbox1> p{font-size:15px; color:#414040; font-weight: bold; margin:10px auto; width:740px; height:180px; color:#666; line-height: 200%; }
+
+.subbox1>img {width:1100px; height:650px; margin:10px auto;}
+
+
+.box56 {width:1100px; height:350px; padding:0; margin:75px auto;}
+.box56 h3 {margin:20px auto;}
+
+.table3 {width:1100px; height:260px; margin:5px auto; border-top:1px solid #eee; border-bottom:1px solid #eee; border-spacing: 0px; border-top:2px solid #666; }
+.table3 h3 {font-size:14px; margin:20px auto;}
+.table3 th {width:150px; height:35px; text-align: left; padding:1px 30px; border-right:1px solid #666; border-bottom:1px solid #666; font-size:12px;  }
+.table3 td {background-color:#fff;  border-bottom:1px solid #666; font-size:12px; }
+
+.submea {width:1100px; height:100px; margin:50px 0 0 0; border-bottom: 2px solid #b5b4b4;}
+.submea ul {display: flex; flex-flow:row wrap; justify-content: space-around; align-items:center; font-size:18px; font-weight: bold; color:#666; margin:0;}
+.submea li:nth-of-type(2) { border-bottom: 2px solid #666; padding:10px 0; background-color:black;}
+.submea li { margin:55px 20px 0 10px;  color:#666;}
+.submea ul li a{color:#fff; text-decoration: none; margin:25px; font-weight: 200; }
+
+.riview {width:1100px; height:210px; text-align:left; margin:45px auto;}
+.riview ul {background-color:red;}
+.riview ul li {float:left; cursor:pointer; margin:10px; font-size:13px;}
+.riview button {float:right; font-size:13px; width:180px; height:25px; display: flex; justify-content: center; align-items: center; border:1px solid #cfcdcd;}
+.riview ul li a {color:black; font-size:13px;}
+.riview table {width:1100px; height:150px; margin:0px auto; border-spacing: 0; border:1px solid #cfcdcd;}
+.riview th {width:150px; padding:3px 10px;  height:30px; border:1px solid #cfcdcd; font-size:13px;}
+.riview td {padding:3px 10px;  width:500px; text-align: center; border:1px solid #cfcdcd;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
