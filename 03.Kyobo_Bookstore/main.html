@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>교보문고</title>
+
+    <!---css 링크주소 -->
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+
+  
+
+
+
+    <!---제이쿼리를 위한 링크 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+      <script src="js/main.js"></script>
+      <script src="js/main_menu_slide.js"></script>
+      <script src="js/main_booklist_click.js"></script>
+    
+
+
+
+    <script>
+        $.ajax({
+                method: "GET",
+                url: "https://dapi.kakao.com/v3/search/book?target=title",
+                data: {
+                    query: "고양이"
+                },
+                headers: {
+                    Authorization: "KakaoAK 8588617ee9bafa6574e5f3e4b7a3c8c8"
+                }
+            })
+            .done(function(msg) {
+                console.log(msg);
+
+
+
+                var boxs = document.getElementsByClassName('box');
+
+
+                for (var i = 0; i < boxs.length; i++) {
+
+                    $("#list_a >.box").eq(i).append('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                    
+                    $("#list_a >.box").eq(i).append("<h3>" +'<a href="sub.html">'+ msg.documents[i].title + "</a>" + "</h3>");
+                    
+                    $("#list_a >.box").eq(i).append("<h6>" +'<a href="sub.html">'+ msg.documents[i].authors + "</a>" +"</h6>");
+
+
+                    var str = msg.documents[i].contents;
+                    var str2 = str.substring(0, 60);
+
+                    $("#list_a >.box > .hoverbox").eq(i).append("<p>" + '<a href="sub.html">' + str2 + "</a>" + "</p>");
+                    $("#list_a >.box ").eq(i).append('<a href="sub.html" class="btn">' + "click" + "</a>");
+
+                }
+
+            });
+
+
+        $.ajax({
+                method: "GET",
+                url: "https://dapi.kakao.com/v3/search/book?target=title",
+                data: {
+                    query: "코딩"
+                },
+                headers: {
+                    Authorization: "KakaoAK 8588617ee9bafa6574e5f3e4b7a3c8c8"
+                }
+            })
+            .done(function(msg) {
+                console.log(msg);
+
+
+                // for문 (8개)
+                var boxs = document.getElementsByClassName('box');
+
+
+                for (var i = 0; i < boxs.length; i++) {
+
+                    $("#list_b >.box").eq(i).append('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                    $("#list_b >.box").eq(i).append("<h3>" + '<a href="sub.html">' + msg.documents[i].title + "</a>" + "</h3>");
+                    $("#list_b >.box").eq(i).append("<h6>" + '<a href="sub.html">'+ msg.documents[i].authors +'</a>'+ "</h6>");
+
+
+                    var str = msg.documents[i].contents;
+                    var str2 = str.substring(0, 35);
+
+                    $("#list_b >.box").eq(i).append("<p>" + '<a href="sub.html">' + str2 + "</a>" + "</p>");
+                    $("#list_b >.box").eq(i).append('<a href="sub.html" class="btn">' + "click" + "</a>");
+
+                }
+            });
+
+
+        $.ajax({
+                method: "GET",
+                url: "https://dapi.kakao.com/v3/search/book?target=title",
+                data: {
+                    query: "경제"
+                },
+                headers: {
+                    Authorization: "KakaoAK 8588617ee9bafa6574e5f3e4b7a3c8c8"
+                }
+            })
+            .done(function(msg) {
+                console.log(msg);
+
+                // for문 (8개)
+                var boxs = document.getElementsByClassName('box');
+
+
+                for (var i = 0; i < boxs.length; i++) {
+
+                    $("#list_c >.box").eq(i).append('<a href="sub.html">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                    $("#list_c >.box").eq(i).append("<h3>" + '<a href="sub.html">' + msg.documents[i].title + "</a>" + "</h3>");
+                    $("#list_c >.box").eq(i).append("<h6>" + '<a href="sub.html">'+msg.documents[i].authors +'</a>'+ "</h6>");
+
+
+                    var str = msg.documents[i].contents;
+                    var str2 = str.substring(0, 35);
+
+                    $("#list_c >.box").eq(i).append("<p>" + '<a href="sub.html">' + str2 + "</a>" + "</p>");
+                    $("#list_c >.box").eq(i).append('<a href="sub.html" class="btn">' + "click" + "</a>");
+
+                }
+
+
+
+
+            });
+
+    </script>
+
+
+
+
+    <script>
+        $(function() {
+
+            //multipage
+
+            $('#booklist li:nth-of-type(1)').click(function() {
+
+
+                $('#list_a').show();
+                $('#list_b').hide();
+                $('#list_c').hide();
+
+
+
+            });
+
+
+
+
+            $('#booklist li:nth-of-type(2)').click(function() {
+
+                $('#list_a').hide();
+                $('#list_b').show();
+                $('#list_c').hide();
+
+            });
+
+
+            $('#booklist li:nth-of-type(3)').click(function() {
+
+
+                $('#list_a').hide();
+                $('#list_b').hide();
+                $('#list_c').show();
+
+
+            });
+
+
+
+            // title 
+
+            $("#booklist li").click(function() {
+
+                $("#titlelist").text($(this).text());
+
+
+            });
+
+
+
+
+        });
+
+    </script>
+
+
+
+
+
+
+    <script>
+        $(function() {
+
+            function prev() {
+                $(".bnA li:last").prependTo(".bnA");
+                $(".bnA").css({
+                    marginLeft: -1050
+                });
+                $(".bnA").stop().animate({
+                    marginLeft: 0
+                }, 800);
+            }
+
+            function next() {
+                $(".bnA").stop().animate({
+                    marginLeft: -1050
+                }, function() {
+                    $(".bnA li:first").appendTo(".bnA");
+                    $(".bnA").css({
+                        marginLeft: 0
+                    }, 800);
+                });
+            }
+
+            function slide() {
+                $(".bnA").stop().animate({
+                    marginLeft: -1050
+                }, function() {
+                    $(".bnA li:first").appendTo(".bnA");
+                    $(".bnA").css({
+                        marginLeft: 0
+                    }, 800);
+                });
+            }
+            setInterval(slide, 50000);
+            $(".prev").click(function() {
+                prev();
+            });
+            $(".next").click(function() {
+                next();
+            });
+        });
+
+    </script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $.ajax({
+                method: "GET",
+                url: "https://dapi.kakao.com/v3/search/book?target=title",
+                data: {
+                    query: "여행요리"
+                },
+                headers: {
+                    Authorization: "KakaoAK 8588617ee9bafa6574e5f3e4b7a3c8c8"
+                }
+            })
+            .done(function(msg) {
+
+                console.log(msg.documents[1].title);
+                console.log(msg.documents[1].thumbnail);
+
+
+
+
+                // 1
+
+                $(".box1:nth-of-type(1)").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+                $(".box1:nth-of-type(1)").append("<h3>" + msg.documents[0].title + "<h3>" + '<a href="sub.html">' + msg.documents[0].title + "</a>" + "</h3>");
+                $(".box1:nth-of-type(1)").append("<h6>" + '<a href="sub.html">' + msg.documents[0].authors[0] + "</a>" +"</h6>");
+
+                var str = msg.documents[0].contents;
+                var str2 = str.substring(0, 60);
+
+
+
+                // 2
+
+                $(".box1:nth-of-type(2)").append("<img src='" + msg.documents[1].thumbnail + "'/>");
+                $(".box1:nth-of-type(2)").append("<h3>" + '<a href="sub.html">' + msg.documents[1].title + '</a>'+"</h3>");
+                $(".box1:nth-of-type(2)").append("<h6>" +  '<a href="sub.html">' + msg.documents[1].authors[0] +'</a>'+ "</h6>");
+
+                var str = msg.documents[1].contents;
+                var str2 = str.substring(0, 60);
+
+
+
+                // 3
+
+                $(".box1:nth-of-type(3)").append("<img src='" + msg.documents[8].thumbnail + "'/>");
+                $(".box1:nth-of-type(3)").append("<h3>" + msg.documents[8].title + "</h3>");
+                $(".box1:nth-of-type(3)").append("<h6>" + msg.documents[8].authors[0] + "</h6>");
+
+                var str = msg.documents[8].contents;
+                var str2 = str.substring(0, 60);
+
+
+
+
+                // 4
+
+                $(".box1:nth-of-type(4)").append("<img src='" + msg.documents[3].thumbnail + "'/>");
+                $(".box1:nth-of-type(4)").append("<h3>" + msg.documents[3].title + "</h3>");
+                $(".box1:nth-of-type(4)").append("<h6>" + msg.documents[3].authors[0] + "</h6>");
+
+                var str = msg.documents[3].contents;
+                var str2 = str.substring(0, 60);
+
+
+            });
+
+    </script>
+    
+    
+    
+    
+  
+    
+    
+    
+
+
+    <!---베스트셀러 -->
+    <script>
+        $.ajax({
+                method: "GET",
+                url: "https://dapi.kakao.com/v3/search/book?target=title",
+                data: {
+                    query: "일러스트레이터",
+                    size: 50
+                },
+                headers: {
+                    Authorization: "KakaoAK 8588617ee9bafa6574e5f3e4b7a3c8c8"
+                }
+            })
+            .done(function(msg) {
+
+                console.log(msg.documents[1].title);
+                console.log(msg.documents[1].thumbnail);
+
+
+
+
+
+
+                // for문 (8개)
+                var boxs = document.getElementsByClassName('box01');
+
+
+                for (var i = 0; i < boxs.length; i++) {
+
+                    $(".box01").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+                    $(".box01").eq(i).append("<h3>" + '<a href="sub_book13.html">' + msg.documents[i].title + "</a>" + "</h3>");
+                    $(".box01").eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
+
+
+                    var str = msg.documents[i].contents;
+                    var str2 = str.substring(0, 60);
+
+                }
+
+            });
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="wrap">
+
+
+        <!---헤더 -->
+
+        <header>
+
+            <div id="h-box">
+
+
+                <div class="nav-box">
+                    <div class="intro">
+                        <ul class="barocon">
+                            <li><a href="#">바로콘<img src="http://image.kyobobook.co.kr/ink/images/gnb/icon_off2.gif" alt="#"></a></li>
+                            <li><a href="#storeList">매장안내</a></li>
+                            <li><a href="#storeList">회원혜택</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="login">
+                        <ul class="loginlist">
+                            <li class="button">
+
+                                <h5>로그인</h5>
+
+                            </li>
+
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">출석체크</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">주문배송</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+                <div class="logo-box">
+                    <div class="logo">
+                        <a href="main.html"><img src="img/logo_kyobo.png" alt="#"></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="   우리나라 구석구석 여행" class="main_input" name="searchKeyword" id="searchKeyword" title="검색어 입력">
+
+                        <input type="button" class="btn_search" value="검색">
+                    </div>
+                    <div class="img">
+                        <img src="img/ddd2.png" alt="#">
+                    </div>
+                </div>
+
+            </div>
+            <div class="n-box">
+                <div class="n-box2">
+                    <div class="category">
+                        <a href="#"><img src="img/ds12.png" alt="#"></a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="sub.html">국내도서</a></li>
+                        <li><a href="sub.html">외국도서</a></li>
+                        <li class="ebook"><a href="sub.html">eBook▼</a>
+                         <ul class="sub11">
+                                <li><a href="sub.html">일반도서</a></li>
+                                <li><a href="sub.html">로맨스</a></li>
+                                <li><a href="sub.html">판타지/무협</a></li>
+                                <li><a href="sub.html">코믹스</a></li>
+                                <li><a href="sub.html">오디오북</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">웹소설</a></li>
+                        <li class="ebook1"><a href="sub.html">기프트▼</a>
+                           <ul class="sub12">
+                                <li><a href="sub.html">다이어리</a></li>
+                                <li><a href="sub.html">트렌드샵</a></li>
+                                <li><a href="sub.html">디자인문구</a></li>
+                                <li><a href="sub.html">디지털</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">음반</a></li>
+                        <li><a href="sub.html">중고장터</a></li>
+                        <li><a href="#"><img src="img/ed13.png" alt="#"></a></li>
+                    </ul>
+
+                    <ul class="navsub">
+                        <li><a href="#">베스트</a></li>
+                        <li>|</li>
+                        <li><a href="#">신상품</a></li>
+                        <li>|</li>
+                        <li><a href="#">이벤트</a></li>
+                        <li>|</li>
+                        <li><a href="#">사은품</a></li>
+                        <li>|</li>
+                        <li><a href="#">Picks</a></li>
+                        <li>|</li>
+                        <li><img src="img/ef333.png" alt="#"></li>
+
+                    </ul>
+                    
+                </div>
+            </div>
+
+
+        </header>
+
+
+        <!---슬라이더 -->
+        <div id="slidewrap">
+            <ul class="slide">
+                <li><img src="img/gg32.png" alt="#"></li>
+                <li><img src="img/gg33.png" alt="#"></li>
+                <li><img src="img/gg34.png" alt="#"></li>
+                <li><img src="img/gg35.png" alt="#"></li>
+            </ul>
+
+        </div>
+
+
+
+        <!---섹션 -->
+        <section>
+
+            <div id="section1">
+                <div class="text-box01">
+                    <h3>화제의 신간</h3>
+                    <ul id="booklist">
+                        <li id="tab_menu1" class="port_back">국내도서</li>
+                        <li id="tab_menu2">외국도서</li>
+                        <li id="tab_menu3">eBook</li>
+                    </ul>
+                </div>
+
+                <article class="bicbox">
+                    <article id="list_a">
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                    </article>
+
+
+
+                    <article id="list_b">
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                    </article>
+
+
+
+                    <article id="list_c">
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                        <div class="box"><div class="hoverbox"></div></div>
+                    </article>
+                </article>
+            </div>
+
+
+
+
+
+            <div id="section2">
+                <div id="bnAwrap">
+
+                    <ul class="bnA">
+                        <li><img src="img/bnA_g01.jpg" alt="#"></li>
+                        <li><img src="img/bnA_g02.jpg" alt="#"></li>
+                        <li><img src="img/bnA_g03.jpg" alt="#"></li>
+                        <li><img src="img/bnA_g04.jpg" alt="#"></li>
+                    </ul>
+                    <span class="prev">&lt;</span>
+                    <span class="next">&gt;</span>
+                </div>
+            </div>
+
+
+
+
+            <div id="section3">
+
+                <div class="text-box">
+                    <h3>이럴 땐 이런 책</h3>
+                </div>
+
+                <div id="b">
+                    <div class="list">
+                        <div class="booklist1"> </div>
+                        <div class="box1"></div>
+                        <div class="box1"></div>
+                        <div class="box1"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="section4">
+                <div id="best" style="background-image: url('http://image.kyobobook.co.kr/ink/images/welcome/bg_blue_triangle.gif')">
+
+                    <div class="bestbox">
+                        <div class="bestsubbox">
+                            <div class="name">
+                                <h4>베스트셀러</h4>
+                            </div>
+
+                        </div>
+                        <div class="bestmain">
+                            <div class="box01">
+                                <img src="img/arrow1.png" alt="#" class="box02">
+                            </div>
+                            <div class="box01">
+                                <img src="img/arrow2.png" alt="#" class="box02">
+                            </div>
+                            <div class="box01">
+                                <img src="img/arrow3.png" alt="#" class="box02">
+                            </div>
+                            <div class="box01"></div>
+                            <div class="box01"></div>
+                            <div class="box01"></div>
+                            <div class="box01"></div>
+                            <div class="box01"></div>
+                            <div class="box01"></div>
+                            <div class="box01"></div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!---푸터 -->
+        <footer>
+            <div class="footermenua">
+                <div class="footermenu">
+                    <ul class="menu">
+                        <li><a href="#">회사소개</a></li>
+                        <li>|</li>
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">청소년보호정책</a></li>
+                        <li>|</li>
+                        <li><a href="#">고객센터</a></li>
+                        <li>|</li>
+                        <li><a href="#">협력사여러분</a></li>
+                        <li>|</li>
+                        <li><a href="#">제휴제안</a></li>
+                        <li>|</li>
+                        <li><a href="#">광고문의</a></li>
+                        <li>|</li>
+                        <li><a href="#">채용문의</a></li>
+                    </ul>
+                    <div class="family">
+                        <h4>FAMILY SITE</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="footerbox">
+
+                <div class="footermain">
+                    <div class="sub">
+                        <img src="img/logo_kyobo.png" alt="#">
+                        <p>㈜ 교보문고 서울시 종로구 종로 1 대표이사 : 박영규</p>
+                        <p>사업자등록번호 : 102-81-11670</p>
+                        <p>대표전화 : 1544-1900 (발신자 부담전화) 팩스 : 0502-987-5711 (지역번호공통)
+                            서울특별시 통신판매업신고번호 : 제 653호 ▶사업자정보확인</p>
+                        <h5>COPYRIGHT(C) KYOBO BOOK CENTREALL RIGHTS RESERVED.</h5>
+                    </div>
+                    <div class="sub1">
+                        <p>LG U+ 구매안전서비스 ▶서비스 가입 확인</p>
+                        <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 LG유플러스의 구매안전서비스를 이용하실 수 있습니다.</p>
+                        <img src="img/gga.png" alt="#">
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
