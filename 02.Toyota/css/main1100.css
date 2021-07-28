@@ -1,0 +1,1643 @@
+@charset "UTF-8";
+
+@media (min-width:1100px) {
+
+    #wrap {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+
+    
+    /*---- 슬라이더 ----*/
+    #slider {
+        width: 100%;
+        height: 740px;
+        background-image: url(../img/02_service_a.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    #slider > .box {
+        width: 1174px;
+        height: 730px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #slider > .box .box2 {
+        width: 750px;
+        height: 270px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #slider > .box .box2 .box3 {
+        width: 15%;
+        height: 150px;
+        
+    }
+
+    #slider > .box .box2 .box3 .box33 {
+        width: 85px;
+        height: 100px;
+        border: 2px solid #fff;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box33-1 {
+        width: 85px;
+        height: 30px;
+        border: 2px solid #fff;
+        color: #fff;
+        text-align: center;
+        border-top:#000;
+    }
+    .box33-1 p {
+        padding:5px;
+    }
+
+    #slider > .box .box2 .box3 .box44 {
+        width: 85px;
+        height: 40px;
+        border: 2px solid #fff;
+        color: #fff;
+        text-align: center;
+    }
+
+
+    #slider > .box .box2 .textbox {
+        width: 85%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:0 0 0 35px;
+    }
+
+    #slider > .box .box2 .textbox h1 {
+        width: 95%;
+        height: 90px;
+        font-size: 30px;
+        line-height: 40px;
+        color:#fff;
+    }
+
+    #slider > .box .box2 .textbox button {
+        width: 200px;
+        height: 40px;
+        background: #ff2f5b;
+        color:#fff;
+        box-shadow:inset 0 0 0 2px #fff, 2px 2px 0 0 #fff;
+        border:none;
+        margin:0px 0 0 20px;
+       
+    }
+
+
+
+    #slider > #icon {
+        width: 100%;
+        height: 220px;
+
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    #slider > #icon .iconbox {
+        width: 70%;
+        height: 180px;
+        background: #fff;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #slider > #icon .iconbox .boxbox {
+        width: 85%;
+        height: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #slider > #icon .iconbox .iconbox1 {
+        width: 230px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #slider > #icon .iconbox .iconbox1 p {
+        font-size: 13px;
+        width: 170px;
+        height: 50px;
+        color:#000;
+    }
+
+    #slider > #icon .iconbox .iconbox1 img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    /*---- SNS박스조절 ----*/
+    #slider > #icon .snsbox {
+        width: 40%;
+        height: 180px;
+        background:transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:20px 0 0 0;
+        padding:0 0 0 0px;
+
+    }
+
+    #slider > #icon .snsbox .scroll h5 {
+        width: 100px;
+        height: 35px;
+        color:#fff;
+        background-color:#533abf;
+        transform: rotate(90deg);
+        border: none;
+        cursor: pointer;
+        padding:5px 0 0 0;
+        margin: 0 0 0 0px;
+        text-align: center;
+        font-size:13px;
+        display:block;
+    }
+
+    #slider > #icon .snsbox .hero-social {
+        width: 140px;
+        height: 125px;
+        border: 0.5px solid #8673d4;
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top:20px;
+        left:460px;
+        margin:8px 40px 0px 0;
+    }
+
+    #slider > #icon .snsbox .hero-social a {
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        height: 33.3%;
+        align-content: flex-start;
+        border: 1px solid #8673d4;
+        justify-content: space-around;
+        font-size:14px;
+    }
+
+    #slider > #icon .snsbox .hero-social-text {
+        text-align: center;
+        display: flex;
+        width: 80px;
+        color:#fff;
+        font-size:12px;
+        padding:10px 0 0 0;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+    /*---- 섹션 ----*/
+    section {
+        width: 100%;
+        height: 8000px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+     section > #sectionbox {
+        width:100%;
+        height:100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+        
+    }
+
+
+    /*---- 섹션-ABOUT ----*/
+    #about {
+        width: 1174px;
+        height: 750px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+
+    }
+
+    .about-img {
+        width: 370px;
+        height: auto;
+        background: #ddd;
+        position: relative;
+        overflow: hidden;
+
+        
+    }
+ 
+
+    .about-img img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        cursor:pointer;
+
+    }
+    
+        .about-img img:hover {
+        width: 100%;
+        height: auto;
+        position: relative;
+        transform: scale(1.2);
+        
+    }
+
+    .about-img-info {
+        width: 100%;
+        height: 35px;
+        background-color: rgba(98, 51, 239, 0.8);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        top: 420px;
+        left: 0;
+    }
+
+    .about-img-info img {
+        width: 16px;
+        height: 16px;
+        opacity: 1;
+    }
+
+
+    .about-text {
+        width: 670px;
+        height: 70%;
+    }
+
+    .about-text01 {
+        width: 100%;
+        height: 35%;
+    }
+
+    .about-text01 h1 {
+        font-size: 45px;
+        line-height: 45px;
+        letter-spacing: -1px;
+        width: 450px;
+        height: 120px;
+    }
+    .about-text01 .box {
+        width:80px;
+        height:3px;
+        background:red;
+    }
+
+    .about-text02 {
+        width: 90%;
+        height: 35%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+   
+        
+    }
+
+    .about-text02 .about-text021 {
+        width: 280px;
+        height: 100px;
+        line-height: 23px;
+    }
+
+    .about-text02 .about-text021 p {
+        font-size: 12px;
+        font-weight: 400;
+        color:#000;
+    }
+
+
+    .about-text03 {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        margin:40px 0 0 0;
+        align-items: center;
+        
+    }
+
+    .about-text03 a {
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 0 0 10px;
+        color:#000;
+    }
+
+    
+    
+    
+    
+    
+    
+
+    /*---- 섹션-GALLERY ----*/
+
+    #gallery-block {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #gallery-block > .gallery-box {
+        width:50%;
+        height:auto;
+        display: flex;
+        flex-direction: row;
+        
+    } 
+
+    #gallery-block > .gallery-box  .gallery01 {
+        width: 50%;
+        height: 100%;
+    }
+
+    #gallery-block >  .gallery-box  .gallery01 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #gallery-block >  .gallery-box  .gallery011 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #gallery-block > .gallery-box  .gallery011 .gallery02 {
+        width: 100%;
+        height: 50%;
+    }
+
+    #gallery-block > .gallery-box  .gallery011 .gallery02 img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+    #gallery-block > .gallery-video {
+        width: 50%;
+        height: 100%;
+        position:relative;
+        
+        
+    }
+
+    #gallery-block > .gallery-video img {
+        width: 100%;
+        height: 100%;  
+        
+        
+    }
+    #gallery-block > .gallery-video .playbox{
+        width: 15%;
+        height: 15%; 
+        position:absolute;
+        top:250px;
+        left:400px;
+        
+    }
+    #gallery-block > .gallery-video .playbox img{
+        z-index: 100;
+        box-shadow:inset 0 0 0 2px #fff, 3px 3px 0 0 #fff;
+    }
+    #gallery-block > .gallery-video .playbox p{
+        text-align:center;
+        font-size:20px;
+        color:#fff;
+        margin:10px 0 0 0;
+        font-weight: bold;
+    }
+
+
+
+    #gallery-block2 {
+        width: 100%;
+        height: 500px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #gallery-block2 > .gallery01 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #gallery-block2 > .gallery01 .galletybox01 {
+        width: 550px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row; margin:0 0 50px 0;
+    }
+    #gallery-block2 > .gallery01 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #gallery-block2 > .gallery01 .gallery01-1 {
+        width: 500px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:0 0 0 30px; 
+    }
+
+
+    #gallery-block2 > .gallery01 .gallery01-1 h4  {
+        font-size: 24px;
+        line-height: 32px;
+        font-style: italic;
+        font-weight: 400;
+        width:350px;
+        height:100px;
+    }
+    #gallery-block2 > .gallery01 .gallery01-1 h5  {
+        margin:60px 0 0 0;
+    }
+    #gallery-block2 > .gallery01 .gallery01-1 h6  {
+        color:#666;
+    }
+    #gallery-block2 > .gallery01 .gallery01-1 h6 span {
+        color:red;
+    }
+
+
+    #gallery-block2 > .gallery011 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+
+    #gallery-block2 > .gallery011 img {
+        width: 50%;
+        height: 100%;
+    }
+
+    #gallery-block2 > .gallery011 .gallery02 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #gallery-block2 > .gallery011 .gallery02 img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    #gallery-block3 {
+        width: 100%;
+        height: 370px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+    }
+     .block3-1 .block3img {
+        display:block;
+    }
+
+    .block3-1 {
+        width: 33.3%;
+        height: 100%;
+    }
+
+    .block3-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .block3-2 {
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 2px solid red;
+    }
+
+    .block3-2 img {
+        width: 60px;
+        height: auto;
+    }
+
+
+    
+    
+    
+    /*---- 섹션-테이블 ----*/
+    #schedule-tabs {
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #schedule-tabs > .table-wrapper {
+        width: 80%;
+        height: 1100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .table-wrapper .table-name{
+        width: 270px;
+        height: 143px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .table-wrapper .table-name p{
+        color:#666;
+        font-weight: 400;
+        font-style: italic;
+    }
+    .table-wrapper .table-name h1{
+        font-size:40px;
+        
+    }
+    .table-wrapper .table-name .table-name-line{
+        width:80px;
+        height:3px;
+        background-color:red;
+        margin:10px 0 0 0;
+    }
+    .table-wrapper .table-day-box{
+        width: 340px;
+        height: 55px;
+        margin:0 0 20px 0 ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .table-wrapper .table-day-box h1{
+        font-size:30px;  
+        font-weight:400;
+    }
+    .table-wrapper .table-day-box .tab-link1 h1{
+        font-size:30px;
+        border-bottom: 2px solid red;
+    }
+   
+    .table-wrapper .table-box{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .table-wrapper .table-box .table-box01{
+        width: 80%;
+        height: 140px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #ddd;
+        border-top: 2px solid #ddd;
+    }
+    .table-wrapper .table-box .table-box01:hover {
+        background-color:#ddd;
+        opacity: 0.8;
+    }
+    .table-wrapper .table-box .table-box01 .box01-timebox{
+        width: 20%;
+        height: 100%;
+        text-align: center;
+        font-size:20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .table-wrapper .table-box .table-box01 .box01-textbox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-between;
+        flex-direction: column;
+        padding:0 0 0 40px;
+    }
+    
+    .table-wrapper .table-box .table-box01 .box01-textbox .event-info {
+        width: 80%;
+        height: 80px;
+        
+       
+    }
+    .table-wrapper .table-box .table-box01 .box01-textbox .event-info h6 {
+        font-size:17px;
+        color:#000;
+        
+    }
+    .table-wrapper .table-box .table-box01 .box01-textbox .event-info p {
+        color:#000;
+        margin: 10px 0 0 0;
+
+    }
+    
+    .table-wrapper .speaker {
+        width:80%;
+        height:40px;
+        display: flex;
+        align-items: center;
+        font-size:13px;
+        
+    }
+    .table-wrapper .speaker img{
+        width:32px;
+        height:32px;
+        
+        border-radius:500px;
+    }
+    .table-wrapper .speaker .speaker-name{
+        margin:0 0 0 10px;
+    }
+    
+    
+    .table-box > button {
+        width: 170px;
+        height: 40px;
+        background: #fff;
+        font-size: 13px;
+        padding: 10px;
+        box-shadow: inset 0 0 0 1px #1a1725, 2px 2px 0 0 #1a1725;
+        margin: 50px 0 0 0;
+        border:none;
+        cursor:pointer;
+    }
+    
+    .table-box > button:hover {
+        background:#ff2f5b;
+        color:#fff;
+        border:none;
+    }
+
+
+    
+    
+    
+
+
+    /*---- 섹션-픽스배경 ----*/
+    #bg-image-section {
+        width: 100%;
+        height: 600px;
+        background-color: #4e28eb;
+        position: relative;
+    }
+
+
+    #bg-image-section > .imgbox {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background: url(../img/bg-image-section01.jpg) fixed;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+    #bg-image-section > .imgbox .numbers-info-block {
+        width: 75%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #bg-image-section > .imgbox .numbers-info-block .numbers1 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bg-image-section > .imgbox .numbers-info-block .numbers1 .numbers01 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #bg-image-section > .imgbox .numbers-info-block .numbers1 .numbers01 h1 {
+        font-size:60px;
+        color:#fff;
+    }
+    
+    #bg-image-section > .imgbox .numbers-info-block .numbers1 .numbers01 .box {
+        width:70px;
+        height:3px;
+        background:#fff;
+    }
+    
+    #bg-image-section > .imgbox .numbers-info-block .numbers1 .numbers01 p {
+        font-size:14px;
+        width: 200px;
+        height:80px;
+        margin:20px 0 0 5px;
+        color:#fff;
+           
+    }
+
+    #bg-image-section > .imgbox .numbers-info-block .numbers2 {
+        width: 50%;
+        height: 100%;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #bg-image-section > .imgbox .numbers-info-block2 {
+        width: 400px;
+        height: 100%;
+        border: 5px solid #fff;
+        background-color: #ff2f5b;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin:0 0 0 100px;
+        padding:0 0 0 20px;
+    }
+    
+    #bg-image-section > .imgbox .numbers-info-block2 h4{
+        font-size:15px;
+        color:#fff;
+        width:90%;
+    }
+    #bg-image-section > .imgbox .numbers-info-block2 h4 span{
+        font-size:15px;
+        color:#fff;
+        float:right;
+    }
+    #bg-image-section > .imgbox .numbers-info-block2 h1{
+        font-size:110px;
+        color:#fff;
+    }
+    #bg-image-section > .imgbox .numbers-info-block2 p{
+        font-size:15px;
+        color:#fff;
+        width:150px;
+    }
+
+
+
+    
+    
+    
+    
+    
+    /*---- 섹션-Speakers ----*/
+
+    #Speakers {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:50px 0 50px 0;
+        
+    }
+
+    #Speakers > .Speakers-box {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Speakers > .Speakers-box .text-img {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:30px 0 30px 0; 
+        
+    }
+
+    #Speakers > .Speakers-box .text-img h2 {
+        font-size: 40px;
+    }
+
+    #Speakers > .Speakers-box .text-img .box {
+        width: 60px;
+        height: 2px;
+        
+    }
+
+    #Speakers > .Speakers-box .text-img p {
+        color:#666;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    #Speakers > .Speakers-box div {
+        width: 100%;
+        height: 10%; 
+    }
+
+     #Speakers > .Speakers-box .box-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        align-content: space-between;
+        margin:30px 0 0 0;
+
+    }
+
+    #Speakers > .Speakers-box .box-img .box-img1 {
+        width: 23%;
+        height: auto;
+         position: relative;
+        overflow: hidden;
+
+    }
+    #Speakers > .Speakers-box .box-img .box-img1 .view{
+        width: 100%;
+        height: 70%;    
+        overflow: hidden;
+          cursor: pointer;
+
+    }
+
+    #Speakers > .Speakers-box .box-img .box-img1 img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+      
+        
+        
+    }
+    
+     #Speakers > .Speakers-box .box-img .box-img1 img:hover {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    #Speakers > .Speakers-box .box-img .box-img1 h4 {
+        font-size: 15px;
+    }
+
+    #Speakers > .Speakers-box .box-img .box-img1 p {
+        font-size: 11px;
+    }
+
+    #Speakers > .Speakers-box .box-img .box-img1 h5 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+   
+
+    #Speakers > .Speakers-box .box-img .box-img2 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-around;
+
+    }
+    
+    
+    
+    
+
+    
+    
+    
+     
+    
+    
+    
+    
+    #Speakers > button {
+        width: 140px;
+        height: 40px;
+        background: #fff;
+        font-size: 13px;
+        padding: 10px;
+        box-shadow: inset 0 0 0 1px #1a1725, 2px 2px 0 0 #1a1725;
+        margin: 90px 0 0 0;
+        border:none;
+        cursor:pointer;
+    }
+    
+     #Speakers > button:hover {
+        background:#ff2f5b;
+        color:#fff;
+        border:none;
+    }
+  
+    
+
+    
+    
+    
+    
+
+    /*---- 섹션-픽스배경2 ----*/
+    #bg-image-section2 {
+        width: 100%;
+        height: 500px;
+        background-color: #4e28eb;
+        position: relative;
+    }
+
+
+    #bg-image-section2 > .imgbox2 {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background: url(../img/bg-image-section02.jpg) fixed;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #bg-image-section2 > .imgbox2 .imgbox-box {
+        width: 80%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #bg-image-section2 > .imgbox2 .imgbox-box .number-box {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 2px solid #fff;
+    }
+
+    #bg-image-section2 > .imgbox2 .imgbox-box .number-box h1 {
+        font-size: 65px;
+        color: #fff;
+    }
+
+    #bg-image-section2 > .imgbox2 .imgbox-box .number-box p {
+        font-size: 13px;
+        color: #fff;
+        width: 100px;
+        text-align: center;
+    }
+
+
+
+    #bg-image-section2 > .imgbox2 .imgbox-box .text-box {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0 0 0 50px;
+
+
+    }
+
+    #bg-image-section2 > .imgbox2 .imgbox-box .text-box p {
+        width: 550px;
+        height: 30px;
+        font-size: 13px;
+        color: #fff;
+
+    }
+
+    #bg-image-section2 > .imgbox2 .imgbox-box .text-box h3 {
+        width: 580px;
+        height: 100px;
+        font-size: 24px;
+        color: #fff; 
+        text-align: left;
+
+    }
+
+    #bg-image-section2 > .imgbox2 .imgbox-box .text-box button {
+        width: 160px;
+        height: 37px;
+        background: #ff2f5b;
+        color: #fff;
+        box-shadow: inset 0 0 0 2px #fff, 2px 2px 0 0 #fff;
+        border: none;
+        cursor:pointer;
+    }
+
+ #bg-image-section2 > .imgbox2 .imgbox-box .text-box button  :hover {
+        background:#ff2f5b;
+        color:#fff;
+        border:none;
+    }
+    
+
+  
+    
+    
+    
+    
+     /*---- 섹션-Events ----*/
+
+        #Events {
+            width: 100%;
+            height: 1800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #Events>.Events-box {
+            width: 70%;
+            height: 1300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #Events>.Events-box .text-img {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0 50px 0;
+        }
+
+        #Events>.Events-box .text-img h2 {
+            font-size: 40px;
+        }
+
+        #Events>.Events-box .text-img .box {
+            width: 60px;
+            height: 2px;
+            background: red;
+        }
+
+        #Events>.Events-box .text-img p {
+            color: #666;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        #Events>.Events-box .img-big-box {
+            width: 100%;
+            height: 120%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #Events>.Events-box .img-big-box .img-box {
+            width: 45%;
+            height: 100%;
+            overflow: hidden;
+
+        }
+    
+    .tab_view {
+
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            background-image: url(../img/01-p-800.jpeg);
+            background-size: cover;
+
+        }
+
+   .tab_inner{ 
+
+   width:600px; height:200px; 
+
+   background:#000;  color:#fff; 
+
+   font-size:12px; text-align:center; line-height:20px; opacity:0.8;
+
+}
+    
+       .tab_inner > h2{ 
+
+           width:600px;
+           height:30px;
+           float:left;
+           margin:20px 0 0 0;
+           text-align: center;
+
+}
+    
+       
+       .tab_inner > p{ 
+
+  width:500px;
+           height:60px;
+           float:left;
+           color:#fff;
+           margin:30px 0 0 50px;
+           text-align: center;
+
+}
+     .tab_view2 {
+
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+         background-image: url(../img/p-10800.jpeg);
+            background-size: cover;
+
+        }
+
+   .tab_inner2{ 
+
+   width:600px; height:200px; 
+
+   background:#000;  color:#fff; 
+
+   font-size:12px; text-align:center; line-height:20px; opacity:0.8;
+
+}
+    
+       .tab_inner2 > h2{ 
+
+           width:600px;
+           height:30px;
+           float:left;
+           margin:20px 0 0 0;
+           text-align: center;
+
+}
+    
+       
+       .tab_inner2 > p{ 
+
+  width:500px;
+           height:60px;
+           float:left;
+           color:#fff;
+           margin:30px 0 0 50px;
+           text-align: center;
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+     .tab_view3 {
+
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+
+            background-image: url(../img/p-800.jpeg);
+            background-size: cover;
+
+        }
+
+    .tab_inner3{ 
+
+   width:600px; height:200px; 
+
+   background:#000;  color:#fff; 
+
+   font-size:12px; text-align:center; line-height:20px; opacity:0.8;
+
+}
+    
+       .tab_inner3 > h2{ 
+
+           width:600px;
+           height:30px;
+           float:left;
+           margin:20px 0 0 0;
+           text-align: center;
+
+}
+    
+       
+       .tab_inner3 > p{ 
+
+  width:500px;
+           height:60px;
+           float:left;
+           color:#fff;
+           margin:30px 0 0 50px;
+           text-align: center;
+
+}
+        .tab_view4 {
+
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+
+            background-image: url(../img/p-1080.jpeg);
+            background-size: cover;
+
+        }
+
+    .tab_inner4{ 
+
+   width:600px; height:200px; 
+
+   background:#000;  color:#fff; 
+
+   font-size:12px; text-align:center; line-height:20px; opacity:0.8;
+
+}
+    
+       .tab_inner4 > h2{ 
+
+           width:600px;
+           height:30px;
+           float:left;
+           margin:20px 0 0 0;
+           text-align: center;
+
+}
+    
+       
+       .tab_inner4 > p{ 
+
+  width:500px;
+           height:60px;
+           float:left;
+           color:#fff;
+           margin:30px 0 0 50px;
+           text-align: center;
+
+}
+
+        #Events>.Events-box .img-big-box .img-box img {
+            width: 100%;
+            height: 70%;
+            cursor: pointer;
+
+        }
+
+        #Events>.Events-box .img-big-box .img-box img:hover {
+            opacity: 0.8;
+        }
+
+        #Events>.Events-box .img-big-box .img-box .text-box {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0 0 0 10px;
+        }
+
+        #Events>.Events-box .img-big-box .img-box .text-box h3 {
+            font-size: 20px;
+            width: 350px;
+            line-height: 26px;
+        }
+
+        #Events>.Events-box .img-big-box .img-box .text-box .linebox {
+            width: 90%;
+            height: 2px;
+            background: #999;
+
+
+        }
+
+        #Events>.Events-box .img-big-box .img-box .text-box p {
+            font-size: 12px;
+            width: 350px;
+            color: #666;
+            margin: 10px 0 10px 0;
+        }
+
+        #Events>.Events-box .img-big-box .img-box .text-box img {
+            width: 80px;
+            height: auto;
+        }
+    
+    
+  #Events > button {
+        width: 140px;
+        height: 40px;
+        background: #fff;
+        font-size: 13px;
+        padding: 10px;
+        box-shadow: inset 0 0 0 1px #1a1725, 2px 2px 0 0 #1a1725;
+        margin: 60px 0 60px 0;
+        border:none;
+      cursor: pointer;
+    }
+    
+     #Events > button:hover {
+        background:#ff2f5b;
+        color:#fff;
+        border:none;
+    }
+
+
+
+
+
+
+
+
+      
+    
+    
+    
+    
+    
+  /*---- 섹션-인풋 ----*/
+
+    #subscribe {
+        width: 100%;
+        height: 300px;
+        background-color: #311d8c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #subscribe > .subscribe-box {
+        width: 75%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #subscribe > .subscribe-box h3{
+        font-size:30px; width:700px; height:60px; text-align: center;
+        color:#fff;
+    }
+    
+    #subscribe > .subscribe-box .w-form {
+        
+        width: 95%; height:120px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #subscribe > .subscribe-box .w-form .input {
+        width:300px; height:42px; border:none; color:#ddd; font-size:11px; padding:0 0 0 10px;
+    }
+    #subscribe > .subscribe-box .w-form .button {
+        background-color: #ff2f5b; width:300px; height:42px; box-shadow: inset 0 0 0 2px #fff, 2px 2px 0 0 #fff; border:none; color:#fff;
+    }
+    #subscribe > .subscribe-box .subscribe-sns-box {
+        width:150px;
+        height:20px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0.8;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---- 섹션-푸터전 박스3개 ----*/  
+    
+    
+    
+ #Makes {
+        width: 100%;
+        height: 850px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #Makes > .Makes-box {
+        width: 80%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #Makes > .Makes-box .text-img {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Makes > .Makes-box .text-img h2 {
+        font-size: 40px;
+    }
+
+    #Makes > .Makes-box .text-img .box {
+        width: 60px;
+        height: 2px;
+        background: red;
+    }
+
+    #Makes > .Makes-box .text-img p {
+        color:#666;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    
+    #Makes > .Makes-box .icon-bic-box {
+        width:100%;
+        height:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box {
+        width:31.3%;
+        height:90%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border:1px solid #ddd;
+    }
+    
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box2{
+        width:100%;
+        height:46%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box2 img {
+        width:70px;
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box2 p {
+        color:#666;
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box2 h1 {
+        font-size:60px;
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box3{
+        width:80%;
+        height:11%;
+        border-top:2px solid #ddd; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box3 img {
+        width:16px;
+        height:16px;
+        margin:-10px 0 0 0;
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box3 h3 {
+        font-size:15px;
+        margin: 0 0 0 10px;
+        text-decoration: line-through;
+        color:#666;
+        font-weight: 400;
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box3 h4 {
+        font-size:14px;
+        margin: 0 0 0 10px;
+        color:#666;
+        font-weight: 400;
+        
+       
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .icon-box4{
+        width:80%;
+        height:5%;
+        border-top:2px solid #ddd; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    #Makes > .Makes-box .icon-bic-box .icon-box .A {
+        width: 140px;
+        height: 40px;
+        background: #fff;
+        font-size: 13px;
+        padding: 10px;
+        box-shadow: inset 0 0 0 1px #1a1725, 2px 2px 0 0 #1a1725;
+        border:none;
+         
+    }
+    
+      #Makes > .Makes-box .icon-bic-box .icon-box .A:hover {
+        background:#ff2f5b;
+        color:#fff;
+        border:none;
+    }
+
+    
+  
+}
+    
