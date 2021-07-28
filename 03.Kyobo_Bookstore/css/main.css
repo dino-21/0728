@@ -1,0 +1,461 @@
+
+
+
+/*---- 슬라이더 ----*/
+#slidewrap {
+    width: 100vw;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+.slide {
+    width: 100vw;
+    position: relative;
+}
+
+.slide > li {
+    width: 100vw;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide > li:not(:first-child) {
+    display: none;
+}
+
+.slide > li > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---- 섹션 ----*/
+
+section {
+    width: 100%;
+    height: 2690px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+#section1 > .text-box01 {
+    width: 1050px;
+    height:40px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:0 0 40px 0;
+}
+
+.text-box01 h3 {
+    font-size: 16px;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    cursor:pointer;
+}
+
+
+
+.text-box01 #booklist {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height:100%;
+    margin:0 0 0 30px;
+
+}
+
+.text-box01 #booklist li  {
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    cursor:pointer;
+    border-bottom:1px solid #ddd;
+    width:33.3%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text-box01 #booklist li:hover {
+    background: #ddd;
+
+}
+
+
+      .port_back {background-color:#ddd; color:#fff;}
+
+
+
+
+#section1{width:100%; height:950px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin:40px 0 0 0;}
+
+.bicbox {width:1050px; height:800px; display: flex; justify-content: space-between;}
+
+
+#bicbox #list_a {width:100%; height:800px; display: flex; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+#list_a >.box {width:240px; height:375px; float:left; text-align:center;  border:1px solid #ddd; box-shadow:4px 4px 4px #eee; display: flex; flex-direction: column;  align-items: center; margin:10px; position:relative;}   
+
+#list_a >.box >.hoverbox{width:240px; height:375px; background-color:rgba(0,0,0,0); cursor:pointer; position:absolute; display: flex; justify-content: center; opacity:0.9;}
+#list_a >.box >.hoverbox:hover {width:240px; height:375px; position:absolute; border:6px solid #5d6596;}
+#list_a >.box >.hoverbox > p {display: none; }
+#list_a >.box >.hoverbox:hover > p { width:130px; height:200px; background:#5d6596; margin-top:25px; display:flex; justify-content: center; align-items: center; padding:10px; }
+#list_a >.box >.hoverbox:hover > p  a{color:#fff; }
+
+
+
+#list_a > .box p {font-size:11px; color:#666; text-align:left; width:160px; height:40px;} 
+#list_a > .box img {width:130px; height:200px; margin-top:30px;} 
+#list_a > .box > h3 {width:150px; text-align: center; line-height: 30px;}
+#list_a > .box > h3 > a {text-decoration: none; color:#333; font-size:13px; width:100px; }
+#list_a > .box > h3 > a:hover {text-decoration: underline;}
+#list_a > .box > p > a {color:#666; text-decoration: none; font-size:11px; width:100px; height:50px; }
+
+
+.box .btn {
+    display: none;
+
+}
+
+
+
+
+#bicbox #list_b {width:100%; height:800px; display: flex; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+#list_b >.box {width:240px; height:375px; float:left; text-align:center;  border:1px solid #ddd; box-shadow:4px 4px 4px #eee; display: flex; flex-direction: column; justify-content: center; align-items: center; margin:10px;}   
+#list_b >.box:hover {
+    border: 7px solid #9cafe9;
+}
+#list_b > .box p {font-size:11px; color:#666; text-align:left; width:160px; height:40px;} 
+#list_b > .box img {width:130px; height:auto;} 
+#list_b > .box > h3 {width:150px; text-align: center; line-height: 30px;}
+#list_b > .box > h3 > a {text-decoration: none; color:#333; font-size:13px; width:100px; }
+#list_b > .box > h3 > a:hover {text-decoration: underline;}
+#list_b > .box > p > a {color:#666; text-decoration: none; font-size:11px; width:100px; height:50px; }
+#list_b > .box > p > a:hover {color:#666; text-decoration: underline;}
+
+
+
+
+
+
+
+#bicbox #list_c {width:100%; height:800px; display: flex; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+#list_c >.box {width:240px; height:375px; float:left; text-align:center;  border:1px solid #ddd; box-shadow:4px 4px 4px #eee; display: flex; flex-direction: column; justify-content: center; align-items: center; margin:10px;}   
+#list_c >.box:hover {
+    border: 7px solid #9cafe9;
+}
+#list_c > .box p {font-size:11px; color:#666; text-align:left; width:160px; height:40px;} 
+#list_c > .box img {width:125px; height:auto;} 
+#list_c > .box > h3 {width:150px; text-align: center;}
+#list_c > .box > h3 > a {text-decoration: none; color:#333; font-size:13px; width:100px;}
+#list_c > .box > h3 > a:hover {text-decoration: underline;}
+#list_c > .box > p > a {color:#666; text-decoration: none; font-size:11px; width:100px; height:50px; }
+#list_c > .box > p > a:hover {color:#666; text-decoration: underline;}
+
+
+#list_a {display:block;}
+#list_b {display:none;}
+#list_c {display:none;}
+
+
+
+
+
+
+
+#b {
+    width: 1050px;
+    height: 350px;
+    display: flex;
+    margin: 0 0 120px 0;
+
+}
+
+
+
+.text-box {
+    width: 1050px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.text-box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    margin: 0px 0 10px 0;
+
+}
+
+
+
+#b > .list .booklist1 {
+    width: 230px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../img/img_situration.jpg);
+    box-shadow: 3px 3px 3px #ddd;
+}
+
+
+#b > .list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor:pointer;
+
+
+}
+
+#b > .list .box1 {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 4px 4px 4px #eee;
+}
+
+#b > .list .box1:hover {
+    border: 7px solid #5d6596;
+
+}
+
+#b > .list .box1 h3 {
+    font-size: 14px;
+    width: 170px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#b > .list .box1 img {
+    width: 160px;
+    height: auto;
+}
+
+#b > .list .box1 h6 {
+    color: #666;
+}
+
+#bnAwrap {
+    width: 1050px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 80px auto;
+}
+
+.bnA {
+    width: 4000px;
+    position: relative;
+    background: red;
+}
+
+.bnA li {
+    width: 1050px;
+    height: 300px;
+    float: left;
+}
+
+.bnA li img {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    font-size: 38px;
+    color: #999;
+    line-height: 50px;
+    background: #ddd;
+    cursor: pointer;
+    height: 70px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+span:hover {
+    background-color: #9cafe9;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    padding: 5px;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+}
+
+#section4{
+    width:100%;
+}
+
+#best {
+    width: 100%;
+    height: 800px;
+    margin: 0px 0 30px 0;
+    background-color: #d3f0fe;
+    display: flex;
+    justify-content: center;
+}
+
+#best > .bestbox {
+    width: 1150px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#best > .bestbox .bestsubbox {
+    width: 1050px;
+    height: 50px;
+
+    display: flex;
+
+}
+
+#best > .bestbox .bestsubbox .name {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+#best > .bestbox .bestsubbox .name h4{
+    font-size:16px;
+    height: 60px;
+    color:#000;
+    cursor:pointer;
+
+    margin:20px 0 0 0;
+}
+
+
+#best > .bestbox .bestsubbox .bestlist {
+    width: 550px;
+    height: 50px;
+    background: #ddd;
+
+}
+
+#best > .bestbox .bestsubbox .bestlist .besta {
+
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 15px 0 0 0;
+
+}
+
+#best > .bestbox .bestsubbox .bestlist .besta li a {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+#best > .bestbox .bestmain {
+    width: 1050px;
+    height: 90%;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#best > .bestbox .bestmain .box01 {
+    width: 200px;
+    height:350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+
+}
+
+#best > .bestbox .bestmain .box01:hover {
+    cursor:pointer;
+    background:#ddd;
+
+}
+
+#best > .bestbox .bestmain .box01 img {
+    width: 140px;
+    height: auto;
+
+}
+
+#best > .bestbox .bestmain .box01 .box02 {
+    width: 40px;
+    height: auto;
+    z-index: 100;
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+
+#best > .bestbox .bestmain .box01 h3 {
+    text-align: center;
+    color: #000;
+    width: 140px;
+    margin: 5px auto;
+    line-height: 12px;
+
+}
+
+#best > .bestbox .bestmain .box01 h3 a {
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+
+}
+
+#best > .bestbox .bestmain .box01 h6 {
+    font-size: 11px;
+    width:100px;
+    margin:10px 0 0 0;
+    text-align: center;
+    color: #666;
+
+}
+
+

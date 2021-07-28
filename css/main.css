@@ -1,0 +1,901 @@
+
+
+/* font-family: 'Playball', cursive; */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    font-family:'Rubik', '나눔고딕','sans-serif'; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    /* dot */
+#dot {
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    width:50px;
+    height: 100%;
+    transform: translatey(-50%);
+    
+    z-index: 300;
+
+
+
+}
+
+#dot ul {
+    width:100px;
+    height:100%;
+
+    padding:330px 0 10px 0;
+}
+
+#dot ul li {
+    width:20px;
+    height:30px;
+    margin:0 0 0 15px;
+}
+
+#dot li a {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 0 8px 0;
+    background-color: #fff;
+    border:2px solid #333;
+    display: block;
+}
+
+#dot li a em {
+    opacity: 0;
+    position: absolute;
+    right: 37px;
+    top: -7px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #111;
+    padding: 0 0 0 0px;
+    margin: 5px 5px 0 0;
+    display: none;
+    transition: all 0.3s ease;
+    width: 80px;
+    font-size: 15px;
+
+
+}
+
+#dot li a em:after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 9px;
+    border-left: 5px solid rgba(255, 255, 255, 0.8);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; font-size: 20px;
+   
+}
+
+#dot li.active a {
+    background-color:darkgrey;
+    position: relative;
+}
+
+#dot li.active a em {
+    opacity: 1;
+    right: 27px;
+    opacity: 1;
+}
+
+/* contents */
+#contents {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-family: '', cursive;
+}
+
+#contents > div {
+    height: 100vh;
+
+}
+
+/* section */
+#section1 {
+    background-image: linear-gradient(to top, #111 0%, #111 100%); 
+
+}
+
+.sec1 > #nav1 {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+    justify-content: space-between;
+    z-index: 300;
+}
+
+.sec1 > #nav1 li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.sec1 > #nav1 li img {
+    width: 45px;
+    height: 45px;
+    
+
+
+  
+}
+
+.sec1 > #nav1 li p {
+    font-size: 14px;
+    font-weight: bold;
+    background: #fff;
+    opacity: 1;
+    border-radius: 20px;
+    color: #333;
+    display:none;
+    width: 210px;
+    height: 24px;
+    margin:0 10px 0 10px;
+}
+
+.typing-txt {
+    display: none;
+}
+
+.typeing-txt ul {
+    list-style: none;
+}
+
+.container h6 {
+    
+    color:#999;
+    font-weight: bold;
+    font-size:17px;
+    z-index: 400;
+    position:absolute;
+    bottom:270px;
+    left:40%;
+}
+
+.typing {
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    font-size: 35px;
+}
+
+.portfolio img{
+    z-index: 800;
+    position:absolute;
+    top:15%;
+    left:35%;
+    transform: -15% -35%;
+ 
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 1px solid #fff
+    }
+
+    50% {
+        border-right: 1px solid #000
+    }
+
+    100% {
+        border-right: 1px solid #fff
+    }
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    background-image:url(../img/BGBG5.jpg);
+    background-position:center;
+    background-size:cover;
+    align-items: center;
+    width:100%;
+    height:100vh;
+
+   
+
+}
+
+
+.sec2 > #sec2box {
+    width: 1500px;
+    height: 800px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+
+   
+    
+
+
+}
+
+#slidewrap {
+
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 10px 10px 10px #eee;
+   margin:30px 0 50px 0px;
+    cursor:pointer;
+    
+}
+ .aphotowrap {width:800px; height:600px; background-color: rgba(0,0,0,0.6); position: absolute; top:0; left: 0; border-radius:0 50px 0 50px; z-index:30;}
+
+ .aphotowrap img {width:40px; height: 40px; position: absolute; top:50%; left:50%; z-index: 40;}
+
+
+.slide {
+    width: 1600px;
+    position: relative; 
+}
+
+.slide > li {
+    width: 800px;
+    height: 600px;
+    
+}
+
+.slide > li a > img {
+    width: 100%;
+    height: auto;  
+}
+
+
+
+
+
+
+.sec2 > #sec2box .textbox {
+    width: 37%;
+    height: 80%;
+    
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+   
+
+}
+
+.sec2 > #sec2box .textbox h2 {
+     color:#000;
+    font-size: 50px;
+    border-bottom: 2px solid #666;
+}
+.sec2 > #sec2box .textbox h2 span {
+     color:red;
+    font-size: 40px;
+}
+
+
+
+.sec2 > #sec2box .textbox h3 {
+    color:#666;
+    font-size: 20px;
+    margin:10px 0 10px 0;
+}
+
+.sec2 > #sec2box .textbox p {
+   color:#666;
+    font-size: 13px;
+    margin:0 0 5px 0;
+}
+
+.sec2 > #sec2box .textbox .p1 {
+    color:#666;
+    font-size:15px;
+    width: 350px;
+    text-align: left;
+    margin:15px 0 0 0;
+    line-height: 25px;
+}
+
+.sec2 > #sec2box .textbox .color {
+    display: flex;
+    width: 110px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#666;
+}
+
+.sec2 > #sec2box .textbox .color h5 {
+    font-size: 20px;
+}
+
+
+.sec2 > #sec2box .textbox .color .color1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #5e6b9e;
+}
+
+.sec2 > #sec2box .textbox .color .color2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #353f67;
+}
+
+.sec2 > #sec2box .textbox .color .color3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #889adc;
+}
+
+
+
+
+
+
+
+
+
+/*섹션3번*/
+#section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/BGBG6.jpg);
+    background-position:center;
+    background-size:cover;
+    width:100%;
+    height:100vh;
+
+   
+}
+
+
+.sec3 > #sec3box {
+    width: 1500px;
+    height: 800px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: row-reverse;
+
+
+    
+    
+
+
+}
+
+#slidewrap3 {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 10px 10px 10px #eee;
+    margin:0 0px 30px 0;
+     background-image:url(../img/BG5.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+
+.slide3 {
+    width: 1600px;
+    position: relative;
+    
+}
+
+.slide3 > li {
+    width: 800px;
+    height: 600px;
+}
+
+.slide3 > li > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.sec3 > #sec3box .textbox3 {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    top: 80px;
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin:0 0 0 -20px;
+   
+   
+
+}
+
+.sec3 > #sec3box .textbox3 h2 {
+     color:#000;
+    font-size: 50px;
+    border-bottom: 2px solid #666;
+}
+.sec3 > #sec3box .textbox3 h2 span {
+     color:red;
+    font-size: 40px;
+}
+
+
+
+.sec3 > #sec3box .textbox3 h3 {
+    color:#666;
+    font-size: 20px;
+    margin:10px 0 10px 0;
+}
+
+.sec3 > #sec3box .textbox3 p {
+   color:#666;
+    font-size: 13px;
+    margin:0 0 5px 0;
+}
+
+.sec3 > #sec3box .textbox3 .p1 {
+    color:#666;
+    font-size: 15px;
+    width: 350px;
+    text-align: left;
+    margin:15px 0 0 0;
+    line-height: 25px;
+}
+
+
+.sec3 > #sec3box .textbox3 .color {
+    display: flex;
+    width: 110px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#666;
+}
+
+.sec3 > #sec3box .textbox3 .color h5 {
+    font-size: 20px;
+}
+
+
+.sec3 > #sec3box .textbox3 .color .color1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #fff;
+    border:2px solid #ddd;
+}
+
+.sec3 > #sec3box .textbox3 .color .color2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: purple;
+}
+
+.sec3 > #sec3box .textbox3 .color .color3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #fe2f5b;
+    border:1px solid #ddd;
+}
+
+
+
+
+
+#sec3box > .mobile3 {
+    width: 290px; height:579px;
+    position: absolute;
+    bottom:50px;
+    left: 580px;
+    z-index: 33;
+}
+
+#sec3box > .mobile3 > img {
+    width: 290px;
+    height: auto;
+    overflow: hidden;
+}
+
+#sec3box > .mobile3 > .mobilepage3 {
+    width: 255px;
+    height: 435px;
+    background-color: black;
+    position: absolute;
+    bottom: 73px;
+    right: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#sec3box > .mobile3 > .mobilepage3 a > img {
+    width: 255px;
+    height: 5281px;
+}
+
+
+
+
+/*섹션4번*/
+#section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/BGBG5.jpg);
+    background-position:center;
+    background-size:cover;
+    width:100%;
+    height:100vh;
+
+   
+}
+
+
+.sec4 > #sec4box {
+    width: 1500px;
+    height: 800px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+
+
+
+}
+
+#slidewrap4 {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 10px 10px 10px #eee;
+    margin:0 0 30px 0px;
+    cursor:pointer;
+}
+
+#slidewrap4:hover {
+
+     
+}
+
+.slide4 {
+    width: 1600px;
+    position: relative;
+}
+
+.slide4 > li {
+    width: 800px;
+    height: 600px;
+}
+
+.slide4 > li > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#sec4box > .mobile4 {
+    width: 290px; height:579px;
+    position: absolute;
+    bottom:80px;
+    left: 550px;
+    z-index: 33;
+}
+
+#sec4box > .mobile4 > img {
+    width: 290px;
+    height: auto;
+    overflow: hidden;
+}
+
+#sec4box > .mobile4 > .mobilepage4 {
+    width: 255px;
+    height: 435px;
+    background-color: black;
+    position: absolute;
+    bottom: 73px;
+    right: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#sec4box > .mobile4 > .mobilepage4 a > img {
+    width: 255px;
+    height: 5281px;
+}
+
+
+
+.sec4 > #sec4box .textbox4 {
+    width: 37%;
+    height: 80%;
+    
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    
+   
+
+}
+
+.sec4 > #sec4box .textbox4 h2 {
+     color:#000;
+    font-size: 50px;
+    border-bottom: 2px solid #666;
+}
+.sec4 > #sec4box .textbox4 h2 span {
+     color:red;
+    font-size: 40px;
+}
+
+
+
+.sec4 > #sec4box .textbox4 h3 {
+    color:#666;
+    font-size: 20px;
+    margin:10px 0 10px 0;
+}
+
+.sec4 > #sec4box .textbox4 p {
+   color:#666;
+    font-size: 13px;
+    margin:0 0 5px 0;
+}
+
+.sec4 > #sec4box .textbox4 .p1 {
+    color:#666;
+    font-size: 15px;
+    width: 350px;
+    text-align: left;
+    margin:15px 0 0 0;
+    line-height: 25px;
+
+}
+
+.sec4 > #sec4box .textbox4 .color {
+    display: flex;
+    width: 110px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#666;
+}
+
+.sec4 > #sec4box .textbox4 .color h5 {
+    font-size: 20px;
+}
+
+
+.sec4 > #sec4box .textbox4 .color .color1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #FDD700;
+}
+
+.sec4 > #sec4box .textbox4 .color .color2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #111;
+}
+
+.sec4 > #sec4box .textbox4 .color .color3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #fff;
+    border:2px solid #ddd;
+}
+
+
+
+
+
+
+#section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/BGBG6.jpg);
+    background-position:center;
+    background-size:cover;
+    width:100%;
+    height:100vh;
+
+   
+}
+
+
+.sec5 > #sec5box {
+    width: 1500px;
+    height: 800px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+
+   
+    flex-direction: row-reverse;
+
+    
+    
+
+
+}
+
+#slidewrap5 {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 10px 10px 10px #eee;
+    margin:0 0 0 0;
+    cursor:pointer;
+    
+}
+
+.slide5 {
+    width: 1600px;
+    height:600px;
+    position: relative;
+}
+
+.slide5 > li {
+    width: 800px;
+    height: 600px;
+}
+
+.slide5 > li a > img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.sec5 > #sec5box .textbox5 {
+    width: 28%;
+    height: 80%;
+    
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+   
+   
+
+}
+
+.sec5 > #sec5box .textbox5 h2 {
+     color:#000;
+    font-size: 50px;
+    border-bottom: 2px solid #666;
+}
+.sec5 > #sec5box .textbox5 h2 span {
+     color:red;
+    font-size: 40px;
+}
+
+
+
+.sec5 > #sec5box .textbox5 h3 {
+    color:#666;
+    font-size: 20px;
+    margin:10px 0 10px 0;
+}
+
+.sec5 > #sec5box .textbox5 p {
+   color:#666;
+    font-size: 13px;
+    margin:0 0 5px 0;
+}
+
+.sec5 > #sec5box .textbox5 .p1 {
+    color:#666;
+    font-size: 15px;
+    width: 350px;
+    text-align: left;
+    margin:15px 0 0 0;
+}
+
+.sec5 > #sec5box .textbox5 .color {
+    display: flex;
+    width: 110px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#666;
+}
+
+.sec5 > #sec5box .textbox5 .color h5 {
+    font-size: 20px;
+}
+
+
+.sec5 > #sec5box .textbox5 .color .color1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #fff;
+    border:2px solid #ddd;
+}
+
+.sec5 > #sec5box .textbox5 .color .color2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #666;
+}
+
+.sec5 > #sec5box .textbox5 .color .color3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #EEEDED;
+    border:1px solid #ddd;
+}
+
+
+

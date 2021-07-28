@@ -1,0 +1,18 @@
+#table3title {width:250px; margin:50px 0 30px 0; }
+#table3title h3 {font-size:14px; }
+.table3 {width:1100px; height:300px; margin:auto; border-top:1px solid #eee; border-bottom:1px solid #eee; border-spacing: 0px; border-top:2px solid #666; }
+.table3 th {width:150px; height:35px; background-color:#eee; text-align: left; padding:1px 30px; border-right:1px solid #666; border-bottom:1px solid #666; font-size:12px; }
+.table3 td {background-color:#fff;  border-bottom:1px solid #666; font-size:12px; }
+
+
+.subme {width:800px; height:50px; margin:40px auto; }
+.subme ul {display: flex; flex-flow:row wrap; justify-content: space-around; align-items:center; font-size:18px; font-weight: bold; color:#666; background-color:red;}
+.subme li:first-child { border-bottom: 2px solid #666; padding:10px 0; background-color:red;}
+.subme li { margin:10px 20px 0 10px;}
+.subme ul li a{color:#777676; text-decoration: none; margin:25px;  }
+
+.submea {width:800px; height:50px; margin:100px auto;}
+.submea ul {display: flex; flex-flow:row wrap; justify-content: space-around; align-items:center; font-size:18px; font-weight: bold; color:#666; }
+.submea li:first-child { border-bottom: 2px solid #666; padding:10px 0; background-color: red;}
+.submea li { margin:10px 20px 0 10px;}
+.submea ul li a{color:#777676; text-decoration: none; margin:25px;  }

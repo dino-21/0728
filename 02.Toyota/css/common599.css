@@ -1,0 +1,587 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "noto Sans KR";
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media (max-width:599px) {
+    #wrap {
+        
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+
+
+    header {
+        width:100%;
+        height:60px;
+        line-height: 10px;
+
+        border-bottom:1px solid #bab9bd;
+         position:absolute; top:0;
+ 
+    }
+
+    .navbox ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+
+    .navbox ul li a {
+        width:100%;
+        line-height: 20px;
+        border:1px solid #ddd;
+        padding: 8px;
+        text-decoration: none;
+        color: #666;
+        display: block;
+        background: #fff;
+        opacity: 0.8;
+        text-align: center;
+        font-size:14px;
+        z-index: 300;
+        font-weight: bold;
+    }
+    
+     .navbox ul li:hover {
+        background:#ddd;
+    }
+     .navbox ul li:hover a {
+        color:#000;
+    }
+
+    .a {
+        display: block;
+        float: right;
+        margin: -45px 0 0 0;
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        cursor: pointer;
+        color:#fff;
+    }
+
+    .logo img {
+        color:#000;
+        width: 45px;
+        height: 45px;
+        margin: 5px 0 10px 20px;
+    }
+
+    .navbox2 {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        width: 100%;
+        background: green;
+        padding: 10px;
+    }
+
+    .navbox {
+        display: none;
+    }
+    
+    .navbox2 a {
+        border:1px solid #ddd;
+    }
+
+    .navbox2 ul li a {
+        display: block;
+        width: 100%;
+        line-height: 150%;
+        background: gold;
+        margin: 0;
+    }
+}
+
+
+
+
+
+/*---- 푸터 ----*/
+
+footer {
+    width: 100%;
+    height:700px;
+    background-color: #1a1725;
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+#footer-bic-box {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.footer-box {
+    width: 100%;
+    height: 56%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px 0 0 0;
+
+
+}
+
+.footer-about {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-about h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-about p {
+    color: #999;
+    font-size: 14px;
+    
+    width: 180px;
+    height: 100px;
+
+}
+
+.footer-about span {
+    color: #bab9bd;
+    font-size: 14px;
+
+
+}
+
+.footer-about span img {
+
+    margin: 0 10px 0 0;
+}
+
+
+.footer-links {
+    width: 175px;
+    height: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size:17px;
+    margin:0 0 0 25px;
+
+}
+
+.footer-links h2 {
+    color: #fff;
+    font-size: 20px;
+    width: 100px;
+
+}
+
+.footer-links ul li {
+    margin: 16px auto;
+
+        width:90px;
+
+}
+
+.footer-links ul li a {
+    color: #bab9bd;
+    font-size: 14px;
+
+
+
+}
+.footer-links ul li:hover a {
+   color:#fff;
+
+
+
+}
+
+.footer-instagram {
+    width: 100%;
+    height:150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer-instagram h2 {
+    color: #fff;
+    font-size: 25px;
+    margin:0 0 20px 0;
+}
+
+.footer-instagram span {
+    color: #bab9bd;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+    padding:0 0 0 0;
+
+
+}
+
+.footer-instagram span img {
+
+    
+}
+
+
+
+
+
+
+/*---- 푸터 맨아랫부분 ----*/
+
+.footer-instagram .footer-instagram-box {
+    width: 100%;
+    
+    display: flex;
+}
+
+.footer-instagram .footer-instagram-box img {
+    width: 90%;
+    height: auto;
+}
+
+.footer-bottom {
+    width: 100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin:60px 0 0 0;
+
+}
+
+.footer-bottom-box {
+    width: 100%;
+
+
+    display: flex;
+        flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer-bottom-box .footer-sns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:-30px 0 0 0;
+}
+
+.footer-bottom-box .footer-sns h3 {
+    font-size: 15px;
+    color: #fff;
+}
+
+.footer-bottom-box .footer-sns .footer-line {
+    width: 50px;
+    height: 2px;
+    background-color: #999;
+}
+
+.footer-bottom-box .footer-sns-box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+}
+
+.footer-bottom-box .footer-create {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 0 0 0;
+}
+
+.footer-bottom-box .footer-create h3,
+p {
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+}
+
+.footer-bottom-box .footer-create img {
+    width: 15px;
+}
+
+/*---- 푸터 ----*/
+
+footer {
+    width: 100%;
+    height: 740px;
+    background-color: #1a1725;
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+#footer-bic-box {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+    .footer-box1 {
+    width: 100%;
+    height: 75%;
+
+
+    padding: 30px 0 0 0;
+
+
+
+}
+
+.footer-box {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0 0 0;
+
+
+}
+
+.footer-about {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-about h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-about p {
+    color: #999;
+    font-size: 14px;
+
+    width: 180px;
+    height: 100px;
+
+}
+
+.footer-about span {
+    color: #bab9bd;
+    font-size: 14px;
+
+
+}
+
+.footer-about span img {
+
+    margin: 0 10px 0 0;
+}
+
+
+.footer-links {
+    width: 175px;
+    height: 292px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0 0 0 25px;
+
+}
+
+.footer-links h2 {
+    color: #fff;
+    font-size: 20px;
+    width: 100px;
+
+}
+
+.footer-links ul li {
+    margin: 16px auto;
+
+    width: 90px;
+
+}
+
+.footer-links ul li a {
+    color: #bab9bd;
+    font-size: 14px;
+
+
+
+}
+
+.footer-instagram {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer-instagram h2 {
+    color: #fff;
+    font-size: 25px;
+    margin: 0 0 20px 0;
+}
+
+.footer-instagram span {
+    color: #bab9bd;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 0;
+
+
+}
+
+.footer-instagram span img {}
+
+
+
+
+
+
+
+.footer-instagram .footer-instagram-box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-instagram .footer-instagram-box img {
+    width: 90%;
+    height: auto;
+}
+
+
+
+/*---- 푸터 맨아랫부분 ----*/
+
+.footer-bottom {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #bab9bd;
+    margin: 60px 0 0 0;
+    padding:20px 0 0 0;
+
+}
+
+.footer-bottom-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer-bottom-box .footer-sns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: -30px 0 0 0;
+}
+
+.footer-bottom-box .footer-sns h3 {
+    font-size: 15px;
+    color: #fff;
+    margin:0 15px 0 0;
+}
+
+.footer-bottom-box .footer-sns .footer-line {
+    width: 50px;
+    height: 1px;
+    background-color: #999;
+    margin:0 15px 0 0;
+}
+
+.footer-bottom-box .footer-sns-box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+}
+
+.footer-bottom-box .footer-create {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.footer-bottom-box .footer-create h3,
+p {
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+}
+
+.footer-bottom-box .footer-create img {
+    width: 12px;
+}
+

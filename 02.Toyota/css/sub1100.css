@@ -1,0 +1,470 @@
+@charset "UTF-8";
+
+@media (min-width:1100px) {
+
+    #wrap {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+
+
+    /*---- 슬라이더 ----*/
+
+    #slider {
+        width: 100%;
+        height: 350px;
+    }
+    
+    #slider img {width:100%; height:350px;}
+
+    /*---- 섹션 ----*/
+
+    section {
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    
+    #section-bic-box {
+
+        width: 65%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #section-bic-box .main {
+
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    
+    .main .mainbox {
+        width:100%;
+        height:600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin:30px auto;
+    }
+    
+    
+    .main .mainbox .name {
+        width:200px;
+        height:40px;
+        
+    }
+    
+    .main .mainbox .name h3{
+       margin:5px 0 0 0;
+        
+    }
+    
+    .main .mainbox .img {
+        width:100%;
+        height:350px;
+        border-radius:20px;
+        background-color:#333;
+        
+    }
+    
+    .main .mainbox .img img{
+        width:100%;
+        height:100%;
+        border-radius:20px;
+        
+    }
+    
+    .main .mainbox .pink {
+        width: 70px;
+        height:80px;
+        background-color:deeppink;
+        border-radius:10px;
+        z-index: 100;
+        margin:-85px 0 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     .main .mainbox .pink h3{
+        font-size:40px; 
+        text-align:center;
+        color:#fff;
+    }
+
+    .main .mainbox .textbox1 {
+        width:90%;
+        height:150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin:0 0 0 33px;
+
+    }
+    
+    .main .mainbox .textbox2 {
+        width:100%;
+        height:30px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #section-bic-box .sub {
+
+        width: 35%;
+        height: 2450px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+    #section-bic-box .sub1 {
+
+        width:100%;
+        height:170px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-bic-box .sub1 .subsearch {
+
+        width:100%;
+        height:130px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-bic-box .sub1 .search {
+
+        width:90%;
+        height:50px;
+        
+    }
+    
+    #section-bic-box .sub1 button {
+
+        width:90%;
+        height:50px;
+        background-color:deeppink;
+        color:#fff;
+        font-size:13px;
+        border:none;
+        
+    }
+    
+    
+    
+    
+     #section-bic-box .sub .sub2 {
+
+        width:100%;
+         height:auto;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+        
+    }
+    
+    #section-bic-box .sub .sub2 .list {
+
+         width:90%;
+         height:auto;
+        
+    }
+    
+    #section-bic-box .sub .sub2 .list h3 {
+
+         width:100%;
+         height:60px;
+         border-bottom:1px solid #ddd;
+         padding: 16px 0 0 0;
+        
+    }
+    
+     #section-bic-box .sub .sub2 .list ul li {
+
+         width:100%;
+         height:55px;
+         background-color:#eee;
+         border-bottom:1px solid #ddd;
+         display: flex;
+         flex-direction: column;
+ 
+    }
+    
+    #section-bic-box .sub .sub2 .list ul li a{
+
+        color:#000;
+        padding:15px 0 0 0;
+        font-size:13px;
+        font-weight: 400;
+        color:#666;
+   }
+    
+    .sub .sub3 {
+        width:100%;
+        height:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:60px 0 0 0;
+        
+    }
+    
+    .sub .sub3 .other{
+        width:90%;
+        height:auto;
+        
+    }
+    
+    .sub .sub3 .other h3{
+       
+        background:#ddd;
+        line-height:70px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .sub .sub3 .other .a1 {
+       width:100%;
+        height:100px;
+        border:2px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .sub .sub3 .other .a1 img{
+       width:100px;
+        
+    }
+     .sub .sub3 .other .a1 p{
+      color:#000;
+         font-size:15px;
+         font-weight: bold;
+        
+    }
+    
+    
+    .sub .sub4 {
+       width:100%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:60px 0 0 0;
+        
+    }
+    
+    .sub .sub4 .tag {
+       width:90%;
+        height:auto;
+        background-color:darkred;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .sub .sub4 h3 {
+       background:#ddd;
+        line-height:70px;
+        border-bottom: 1px solid #ddd;
+        
+    }
+    .sub .sub4 .configuration {
+       width:100%;
+        height:200px;
+        background:#eee;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+    .sub .sub4 .configuration a{
+      color:#000;
+        font-size:12px;
+        
+    }
+    
+     .sub .sub4 .a2 {
+       width:80px;
+         height:30px;
+         background:#fff;
+         font-size:13px;
+         text-align: center;
+         border:2px solid #999;
+         padding:2px 0 0 0;
+        
+    }
+    .sub .sub4 .a2:hover {
+       width:80px;
+         height:30px;
+         background:#ddd;
+         font-size:13px;
+         text-align: center;
+         border:2px solid #999;
+         padding:2px 0 0 0;
+        
+    }
+    
+    .sub .sub4 .a3 {
+       width:80px;
+         height:30px;
+         background:#fff;
+         font-size:13px;
+         text-align: center;
+         border:2px solid #999;
+        margin:-5px 0 0 0;
+        padding:2px 0 0 0;
+    }
+    
+    .sub .sub4 .a3:hover {
+       width:80px;
+         height:30px;
+         background:#ddd;
+         font-size:13px;
+         text-align: center;
+         border:2px solid #999;
+        margin:-5px 0 0 0;
+        padding:2px 0 0 0;
+    }
+    
+    
+    
+    
+    .sub .sub5 {
+       width:100%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:60px 0 0 0;
+        
+    }
+    
+    .sub .sub5 .festival {
+       width:90%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .sub .sub5 h3 {
+       background:#ddd;
+        line-height:70px;
+        border-bottom: 1px solid #ddd;
+        
+    }
+    .sub .sub5 .otherfestival {
+       width:100%;
+        height:200px;
+        background:#eee;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+    .sub .sub5 .otherfestival .img {
+       width:80px;
+        height:70px;
+        background:cyan;
+        
+        
+    }
+    
+    .sub .sub5 .otherfestival .img img{
+       width:100%;
+        height:100%; 
+    }
+    
+    
+   
+    
+    
+    
+    
+     #section-bic-box .sub1-1 {
+
+        width:100%;
+        height:230px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+         margin:60px 0 0 0;
+    }
+    
+     #section-bic-box .sub1-1 h3 {
+       background:#ddd;
+         width:90%;
+        line-height:70px;
+        border-bottom: 1px solid #ddd;
+        
+    }
+    
+    #section-bic-box .sub1-1 .subsearch {
+
+        width:100%;
+        height:130px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section-bic-box .sub1-1 .search {
+
+        width:90%;
+        height:50px;
+        
+    }
+    
+    #section-bic-box .sub1-1 button {
+
+        width:90%;
+        height:50px;
+        background-color:deeppink;
+        color:#fff;
+        font-size:13px;
+        border:none;
+        
+    }
+   
+
+
+
+
+}

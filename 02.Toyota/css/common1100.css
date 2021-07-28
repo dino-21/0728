@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "noto Sans KR";
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media (min-width:1100px) {
+
+    #wrap {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+
+    /*---- 헤더 ----*/
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 10px; 
+        height:70px;
+    }
+    
+    .logo img {
+       
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+
+
+    .navbox ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbox ul li a {
+        width:100%;
+        line-height: 20px;
+        border:none;
+        padding: 8px;
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        background: transparent;
+        opacity: 1;
+        text-align: center;
+        font-size:14px;
+        z-index: 300;
+        font-weight: bold;
+    }
+    
+     .navbox ul li:hover {
+        background: transparent;
+    }
+     .navbox ul li:hover a {
+        color:#ff2f5b;
+    }
+
+    
+    
+
+    .a {
+        display: none;
+    }
+
+    .navbox {
+        display: block;
+    }
+
+    .navbox2 {
+        display: none;
+    }
+    
+  
+
+
+
+
+
+
+
+    /*---- 푸터 ----*/
+
+    footer {
+        width: 100%;
+        height: 550px;
+        background-color: #1a1725;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    #footer-bic-box {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+
+    }
+    
+    .footer-box1{
+        width:80%;
+        height:80%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .footer-box {
+        width: 60%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px 0 0 0; 
+
+
+
+    }
+
+    .footer-about {
+        width: 50%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .footer-about h2 {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .footer-about p {
+        color: #999;
+        font-size: 13px;
+        width: 250px;
+        height: 100px;
+    }
+
+    .footer-about span {
+        color: #999;
+        font-size: 13px;
+
+
+    }
+
+    .footer-about span img {
+
+        margin: 0 10px 0 0;
+    }
+
+
+    .footer-links {
+        width: 15%;
+        height: 200px;
+        display: flex;
+       
+        flex-direction: column; 
+
+
+    }
+
+    .footer-links h2 {
+        color: #fff;
+        font-size: 20px;
+        width: 100px;
+
+    }
+
+    .footer-links ul li {
+        margin: 16px 0 0 0;
+
+    }
+
+    .footer-links ul li a {
+        color: #999;
+        font-size: 13px;
+
+    }
+    .footer-links ul li:hover a {
+   color:#fff;
+
+
+
+}
+
+    .footer-instagram {
+        width: 30%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+    .footer-instagram h2 {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .footer-instagram span {
+        color: #999;
+        font-size: 13px;
+        margin: -20px 0 0 0;
+
+
+    }
+
+    .footer-instagram span img {
+
+        margin: 0px 10px 0 0;
+    }
+
+
+    .footer-instagram .footer-instagram-box {
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-flow: row wrap ;
+        margin:-30px 0 0 0;
+
+    }
+
+    .footer-instagram .footer-instagram-box img {
+        width: 80px;
+        margin:5px;
+        
+    }
+
+    
+    
+    
+    
+    
+    
+      /*---- 푸터 맨아랫부분 ----*/
+    .footer-bottom {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+
+    .footer-bottom-box {
+        width: 80%;
+        height: 20%;
+        margin: -30px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        
+
+    }
+
+    .footer-bottom-box .footer-sns {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin:0px 0 0 0;
+    }
+
+    .footer-bottom-box .footer-sns h3 {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .footer-bottom-box .footer-sns .footer-line {
+        width: 50px;
+        height: 2px;
+
+    }
+
+    .footer-bottom-box .footer-sns-box {
+        width: 47%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #999;
+    }
+
+    .footer-bottom-box .footer-create {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+                margin:0px 0 0 0;
+
+        
+    }
+
+    .footer-bottom-box .footer-create h3,
+    p {
+        font-size: 13px;
+        color: #999;
+        font-weight: 400;
+    }
+
+    .footer-bottom-box .footer-create img {
+        width: 15px;
+    }
+
+}
