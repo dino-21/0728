@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toyota</title>
+
+    <!---css 링크주소 -->
+    <link rel="stylesheet" href="css/sub599.css">
+    <link rel="stylesheet" href="css/sub600.css">
+    <link rel="stylesheet" href="css/sub1100.css">
+
+    <link rel="stylesheet" href="css/common599.css">
+    <link rel="stylesheet" href="css/common600.css">
+
+    <link rel="stylesheet" href="css/common1100.css">
+
+
+
+    <!---반응형을 위한 링크-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!---제이쿼리를 위한 링크 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+    <!---햄버거버튼 -->
+    <script>
+        $(function() {
+
+            $(".a").click(function() {
+
+                $(".navbox").stop().slideToggle("fast");
+
+            });
+
+        });
+
+
+        $(window).resize(function() {
+
+            if (window.innerWidth <= 1099) {
+
+                $('.navbox').hide();
+            }
+
+            if (window.innerWidth > 1100) {
+
+                $('.navbox').show();
+            }
+        });
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+
+
+        <!---헤더 -->
+
+        <header>
+            <div class="logo">
+                <a href="main.html"><img src="img/123ddd.png" alt="#"></a>
+            </div>
+
+            <img src="img/nav-button-img-01.png" alt="#" class="a">
+
+
+
+            <div class="navbox">
+                <ul>
+                    <li><a href="sub.html" style="color:deeppink">Home v.1</a></li>
+                    <li><a href="sub.html">Home v.2</a></li>
+                    <li><a href="sub.html" >Speakers</a></li>
+                    <li><a href="sub.html">Events</a></li>
+                    <li><a href="sub.html">Schedule</a></li>
+                    <li><a href="sub.html">Tickets</a></li>
+                    <li><a href="sub.html">Contacts</a></li>
+                </ul>
+            </div>
+
+
+            <div class="navbox2">
+                <ul>
+                    <li><a href="#">Home v.1</a></li>
+                    <li><a href="#">Home v.2</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+
+
+        </header>
+
+        <div id="slider">
+
+        <img src="img/submain.jpg" alt="#">
+
+        </div>
+
+        <section>
+            <div id="section-bic-box">
+                <div class="main">
+                    <div class="mainbox">
+                        <div class="name">
+                            <h3>SERVICE SPECIALIST</h3>
+                        </div>
+                       
+                        <div class="img">
+                            <img src="img/ss_img4.jpg" alt="#">
+                        </div>
+                        
+                        <div class="pink">
+                            <h3>01</h3>
+                        </div>
+                        
+                        <div class="textbox1">
+                            <h1>SERVICE ADVISOR</h1>
+                            <p>We kindly guide you through the service booking to vehicle delivery, and analyze your vehicle usage to provide you with appropriate suggestions and consultations.</p>
+                            <div class="textbox2">
+                                <p>TOYOTA</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                     <div class="mainbox">
+                        <div class="name"></div>
+                       
+                        <div class="img">
+                            <img src="img/ss_img5.jpg" alt="#">
+                        </div>
+                        
+                        <div class="pink">
+                             <h3>02</h3>
+                        </div>
+                        
+                        <div class="textbox1">
+                            <h1>SERVICE TECHNICIAN</h1>
+                            <p>Service Technician is the best maintenance specialist selected annually through its own certification system. Years of maintenance experience and skilled skills will increase the value of your vehicle.</p>
+                            <div class="textbox2">
+                                <p>TOYOTA</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                     <div class="mainbox">
+                        <div class="name"></div>
+                       
+                        <div class="img">
+                            <img src="img/ss_img6.jpg" alt="#">
+                        </div>
+                        
+                        <div class="pink">
+                             <h3>03</h3>
+                        </div>
+                        
+                        <div class="textbox1">
+                            <h1>PARTS SPECIALIST</h1>
+                            <p>The Parts Specialist is an expert with professional parts knowledge. Provide a seamless supply of parts for the customer to deliver the vehicle at the desired time.</p>
+                            <div class="textbox2">
+                                <p>TOYOTA</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                     <div class="mainbox">
+                        <div class="name"></div>
+                       
+                        <div class="img">
+                            <img src="img/ss_img8.jpg" alt="#">
+                        </div>
+                        
+                        <div class="pink">
+                             <h3>04</h3>
+                        </div>
+                        
+                        <div class="textbox1">
+                            <h1>RECEPTION</h1>
+                            <p>We have a dedicated reception for you. At the service reception, we will help you book, register, and deliver, and we will be very kind to you if you visit us at any time.</p>
+                            <div class="textbox2">
+                                <p>TOYOTA</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                <div class="sub">
+                
+                    <div class="sub1">
+                       <div class="subsearch">
+                        <input type="text" class="search" maxlength="256" name="Subscribe-Name-2" data-name="#" placeholder="TOYOTA MODEL..." >
+                        
+                        <button>SEARCH</button>
+                        </div>
+                    </div>
+                    
+                    <div class="sub2">
+                     <div class="list">
+                         <h3>MODELS
+</h3>
+                         <ul>
+                             <li><a href="#">AVALON HYBRID</a></li>
+                             <li><a href="#">EXTERIOR</a></li>
+                             <li><a href="#">INTERIOR</a></li>
+                             <li><a href="#">FEATURES</a></li>
+                             <li><a href="#">GALLERY</a></li>
+                             <li><a href="#">SPECS</a></li>
+                             <li><a href="#">PRICE</a></li>
+                             
+                         </ul>
+                     </div>
+                    </div>
+                    
+                    <div class="sub3">
+                     <div class="other">
+                         <h3>NEW TOYOTA</h3>
+                         <div class="a1">
+                             <img src="img/box-img04.jpg" alt="#">
+                             <p>ABALON HYBRID</p>
+                         </div>
+                         <div class="a1">
+                             <img src="img/box-img03.jpg" alt="#">
+                             <p>ABALON HYBRID</p>
+                         </div>
+                         <div class="a1">
+                             <img src="img/box-img02.jpg" alt="#">
+                             <p>ABALON HYBRID</p>
+                         </div>
+                         <div class="a1">
+                             <img src="img/box-img01.jpg" alt="#">
+                             <p>ABALON HYBRID</p>
+                         </div>
+                     </div>
+                    </div>
+                    
+                    <div class="sub4">
+                       <div class="tag">
+                        <h3>other product</h3>
+                        <div class="configuration">
+                            
+                            <div class="a2"><a href="#">eunbi</a></div>
+                            <div class="a2"><a href="#">ZZANG</a></div>
+                            <div class="a2"><a href="#">eunbi</a></div>
+                            <div class="a2"><a href="#">ZZANG</a></div>
+                            <div class="a3"><a href="#">eunbi</a></div>
+                            <div class="a2"><a href="#">ZZANG</a></div>
+                            <div class="a2"><a href="#">ZZANG</a></div>
+                            <div class="a2"><a href="#">eunbi</a></div>
+                            <div class="a3"><a href="#">ZZANG</a></div>
+                             
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sub5">
+                       <div class="festival">
+                        <h3>other festival</h3>
+                        <div class="otherfestival">
+                            
+                            <div class="img">
+                                <img src="img/01-p-800.jpeg" alt="#">
+                        
+                            </div>
+                            <div class="img">
+                                <img src="img/vcvcvc.png" alt="#">
+                            </div>
+                            <div class="img">
+                                <img src="img/ext-slide-01.png" alt="#">
+                            </div>
+                            <div class="img">
+                                <img src="img/001.jpg" alt="#">
+                            </div>
+                            <div class="img">
+                                <img src="img/trtrtrtrt.jpg" alt="#">
+                            </div>
+                            <div class="img">
+                                <img src="img/media-grid-image-05-p-500.jpeg" alt="#">
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+                  <div class="sub1-1">
+                      <h3>List</h3>
+                       <div class="subsearch">
+                        <input type="text" class="search" maxlength="256" name="Subscribe-Name-2" data-name="#" placeholder="Search Keyword" >
+                        
+                        <button>SEARCH</button>
+                        </div>
+                    </div>
+         
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+ <!---푸터 -->
+        <footer>
+            <div id="footer-bic-box">
+                <div class="footer-box1">
+                    <div class="footer-box">
+                        <div class="footer-about">
+                            <h2>TOYOTA</h2>
+                            <p>Experience the joy of a new life.</p>
+                            <span><img src="img/about-img.png" alt="#">DROP US A LINE</span>
+                        </div>
+                        <div class="footer-links">
+                            <h2>Navigation</h2>
+                            <ul>
+                                <li><a href="#">DEALERS</a></li>
+                                <li><a href="#">MODEL</a></li>
+                                <li><a href="#">EVENT</a></li>
+                                <li><a href="#">STYLE</a></li>
+                                <li><a href="#">STORY</a></li>
+                                <li><a href="#">SERVICE</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h2>Other Pages</h2>
+                            <ul>
+                                <li><a href="#">Style Guide</a></li>
+                                <li><a href="#">Licenses</a></li>
+                                <li><a href="#">Changelog</a></li>
+                                <li><a href="#">Protected Page</a></li>
+                                <li><a href="#">404 Page</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-instagram">
+                        <h2>Instagram</h2>
+                        <div class="footer-instagram-box">
+                            <a href="http://www.instagram.com" target="_blank" class="instagram-photo">
+                                <img src="img/instagram-01.jpg" alt="#">
+                            </a>
+                            <a href="http://www.instagram.com" target="_blank" class="instagram-photo">
+                                <img src="img/instagram-02.jpg" alt="#">
+                            </a>
+                            <a href="http://www.instagram.com" target="_blank" class="instagram-photo">
+                                <img src="img/instagram-03.jpg" alt="#">
+                            </a>
+
+
+                            <a href="http://www.instagram.com" target="_blank" class="instagram-photo">
+                                <img src="img/instagram-07.jpg" alt="#">
+                            </a>
+                            <a href="http://www.instagram.com" target="_blank" class="instagram-photo">
+                                <img src="img/instagram-05.jpg" alt="#">
+                            </a>
+                            <a href="http://www.instagram.com" target="_blank" class="instagram-photo">
+                                <img src="img/instagram-06.jpg" alt="#">
+                            </a>
+                        </div>
+                        <span><img src="img/about-img.png" alt="#">SEE ALL PHOTOS</span>
+
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-box">
+                        <div class="footer-sns">
+                            <h3>Follow Us</h3>
+                            <div class="footer-line"></div>
+                            <div class="footer-sns-box">
+                                <a href="http://twitter.com" target="_blank"> <img src="https://assets.website-files.com/5a680087d2637e0001af7d80/5a6c4fcd7bd20a000183b8d9_twitter-icon-white.svg" alt="#"></a>
+
+                                <a href="http://facebook.com" target="_blank"> <img src="https://assets.website-files.com/5a680087d2637e0001af7d80/5a6c4fcc7bd20a000183b8d8_facebook-icon-white.svg" alt="#"></a>
+
+                                <a href="http://instagram.com" target="_blank"> <img src="https://assets.website-files.com/5a680087d2637e0001af7d80/5a6c4fcd92eb97000119b65e_instagram-icon-white.svg" alt="#"></a>
+
+                                <a href="http://youtube.com" target="_blank"> <img src="https://assets.website-files.com/5a680087d2637e0001af7d80/5a6c4fcd513ec40001b66044_youtube-icon-white.svg" alt="#"></a>
+
+                                <a href="http://vimeo.com" target="_blank"> <img src="https://assets.website-files.com/5a680087d2637e0001af7d80/5a6c4fcd92eb97000119b65d_vimeo-icon-white.svg" alt="#"></a>
+                            </div>
+                        </div>
+                        <div class="footer-create">
+                            <h3>COPYRIGHT 2020
+                            </h3>
+                            <p>TOYOTA MOTOR KOREA CO.,LTD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
